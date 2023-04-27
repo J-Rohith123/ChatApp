@@ -1,0 +1,312 @@
+.home{
+    display: flex;
+    background-color: aquamarine;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.home .container{
+    display: flex;
+   width: 80%;
+   height: 80%;
+   border: 1px solid white;
+   border-radius: 10px;
+   overflow: hidden;
+}
+.left{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    background-color: greenyellow;
+}
+.right{
+    flex:2;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.rightnone{
+    flex:2;
+    background-color: rgb(10, 244, 92);
+    display: flex;
+    color:  rgb(12, 83, 22);;
+    justify-content: center;
+    align-items: center;
+}
+.right .chatusermenu{
+    position: absolute;
+    background-color: white;
+    list-style: none;
+    padding: 10px;
+    width: 15%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px 0 10px 10px ;
+    align-items: center;
+    right: 19px;
+    top: 10%;
+}
+.right .chatusermenu::after{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    right: 0;
+    top: -7px;
+    background:linear-gradient(
+        -65deg,
+        white 0%,
+        white 50%,
+        transparent 50%,
+        transparent 100%
+    );
+    content: "";
+   
+}
+.right .chatusermenu li{
+    width: 100%;
+    padding: 10%;
+    text-align: center;
+}
+.right .chatusermenu li:hover{
+    background-color: rgb(43, 189, 43);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.userbox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 12.5%;
+    padding: 0 10px 0 10px ;
+    background-color: green;
+}
+.userbox b{
+    font-size: large;
+    color: white;
+}
+.userbox .user{
+    display: flex;
+    gap: 2%;
+    justify-content: space-between;
+    align-items: center;
+}
+.userbox .user p{
+     color: white;
+     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.userbox .user img{
+   width:40px;
+   height: 40px;
+   background-color: aqua;
+   border-radius: 50%;
+   object-fit: cover;
+}
+.userbox .user button{
+  color: green;
+  background-color: greenyellow;
+  height: 2rem;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 5px 5px 0 black;
+}
+.userbox .user button:hover{
+    box-shadow: none;
+}
+.contacts .searchcontainer{
+    border-bottom: 1px solid gray;
+    padding: 10px;
+}
+.contacts .searchcontainer #search {
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+}
+.contacts .searchcontainer #search ::placeholder{
+    color: gray;
+}
+.contactlist{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.contactitem{
+    position: relative;
+    display: flex;
+    padding: 10px;
+    gap: 10px;
+    border-bottom: 1px solid black;
+    width: 100%;
+    align-items: center;
+}
+.contactitem:hover{
+    background-color: rgba(12, 244, 12, 0.854);
+}
+.contactitem img{
+    width:40px;
+    height: 40px;
+    background-color: aqua;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.namemsg{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    height: 40px;
+}
+.namemsg #name{
+    font-weight: 500;
+    color: black;
+}
+.namemsg #msg{
+    font-size: small;
+    color: black;
+}
+#unreadno{
+    position: absolute;
+    width: 15px;
+    text-align: center;
+    right: 15%;
+    background-color: green;
+    color: white;
+    padding: 1%;
+    border-radius: 50%;
+}
+.chattopbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 12.5%;
+    padding: 0 1% 0 1% ;
+    background-color: rgba(21, 219, 21, 0.747);
+}
+.chattopbar .userpro{
+    display: flex;
+    gap: 5%;
+    align-items: center;
+}
+.chattopbar .userpro img{
+    width:40px;
+   height: 40px;
+   background-color: aqua;
+   border-radius: 50%;
+   object-fit: cover;
+}
+.chattopbar .icons {
+    font-size: 2rem;
+    display: flex;
+    gap: 10%;
+    cursor: pointer;
+}
+
+.chatinput{
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    border-top: 1px solid black;
+    padding: 0 1% 0 1%;
+    align-items: center;
+    overflow: hidden;
+    gap: 1%;
+    align-items: center;
+    justify-content: center;
+}
+.chatinput input{
+    width: auto;
+    border-bottom: 2px solid gray;
+    background-color: antiquewhite;
+    height: 100%;
+    border: none;
+    flex: 8.5;
+    font-size: 1rem;
+    outline: none;
+}
+.chatinput .items{
+    display: flex;
+    flex-direction: row;
+    flex: 1.5;
+    justify-content: space-evenly;
+    font-size: 1.5rem;
+}
+.chatinput .items button{
+    font-size: 1.5rem;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    height: 100%;
+}
+.chatinput .items button:hover{
+    color: greenyellow;
+}
+.chatinput .items label:hover{
+    
+    color: greenyellow;
+   
+}
+.chatroom{
+    height: calc(86.5% - 50px);
+    padding: 1% 1% 0 1%;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    overflow-x: hidden;
+    background-color: rgb(10, 244, 92);
+    gap:1%;
+}
+.sentcontainer{
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+}
+.sentcontainer p{
+    margin:0;
+    padding: 0;
+    font-size: 0.7rem;
+    color: white;
+    align-self: flex-end;
+}
+.sentmessage{
+    background-color: greenyellow;
+    width: max-content;
+    max-width: 80%;
+    padding: 1%;
+    flex-wrap: wrap;
+    border-radius: 10px 0 10px 10px;
+    align-self: flex-end;
+}
+
+.receivecontainer{
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+}
+.receivecontainer p{
+    margin:0;
+    padding: 0;
+    font-size: 0.7rem;
+    color: rgb(44, 59, 21);
+}
+.receivemessage{
+    background-color: white;
+    width: fit-content;
+    max-width: 80%;
+    flex-wrap: wrap;
+    padding: 1%;
+    border-radius: 0px 10px 10px 10px;
+}
+.daterow{
+    background-color: rgb(44, 136, 26);
+    padding: 0.5%;
+    margin: 0;
+    width: fit-content;
+    font-size: 0.6rem;
+    border-radius: 5px;
+    align-self: center;
+    color: white;
+}
